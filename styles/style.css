@@ -41,7 +41,7 @@
 }
 
 .logo {
-  width: 182px;
+  width: 183px;
   height: 32px;
 }
 
@@ -49,6 +49,7 @@
   position: absolute;
   top: 30px;
   left: 64px;
+  background-image: url('../images/logo_place_header.svg');
 }
 
 .header__title {
@@ -210,11 +211,14 @@
   line-height: 51px;
   font-weight: normal;
 }
+.feyman__link a {
+  text-decoration: none;
+}
 
 /* Принципы обучения  kaufman */
 .kaufman {
   overflow: hidden;
-  background-color: #1f1f1f;;
+  background-color: #1f1f1f;
 }
 
 .section-title_theme_dark{
@@ -239,3 +243,65 @@
   top: 0;
   right: -210px;
 }
+
+/* Добрался и до футера */
+
+.footer {
+ min-height: 350px;
+ background-color: #1f1f1f;
+}
+
+.footer__columns {
+  padding-top: 60px;
+  margin: 0 auto 40px;
+  flex-basis: 711px;
+  width: 90%;
+}
+
+.footer__column_content_copyright {
+  width: 50%;
+  justify-content: space-between;
+}
+
+.logo_place_footer {
+  background-image: url('../images/logo_place_footer.svg');
+  height: 35px;
+}
+
+.footer__author {
+  color: #fff;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 18px 0;
+}
+
+.footer__column_content_info {
+
+}
+
+.footer__column-heading {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.footer__column-link {
+ text-decoration: none;
+ color: #fff;
+ font-size: 18px;
+ line-height: 30px;
+ align-items: center;
+}
+
+.footer__column-link:last-child {
+  margin-bottom: 16px;
+}
+
+.footer__column-social-icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+
