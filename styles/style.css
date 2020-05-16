@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* Чуть чуть общих классов-миксов */
@@ -38,6 +38,7 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: #f2f2f2;
 }
 
 .logo {
@@ -94,9 +95,7 @@
 
 /* Дискриптион */
 
-.description {
 
-}
 
 .two-columns {
   margin: 100px auto 0;
@@ -132,9 +131,7 @@
 
 /* делаю первую таблицу Digits */
 
-.digits {
 
-}
 
 .section-title {
   width: 60%;
@@ -276,9 +273,7 @@
   padding: 18px 0;
 }
 
-.footer__column_content_info {
 
-}
 
 .footer__column-heading {
   color: #fff;
