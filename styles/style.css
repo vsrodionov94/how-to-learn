@@ -6,39 +6,18 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-/* Чуть чуть общих классов-миксов */
-
-.flex-row {
-  display: flex;
-  position: relative;
-}
-
-.flex-column {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-}
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.center-content {
-  justify-content: center;
-}
-
-.space-btwn {
-  justify-content: space-between;
+  font-family: Arial, 'Helvetica Neue', sans-serif;
 }
 
 /* Делаем хидер */
+
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  display: flex;
+  position: relative;
 }
 
 .logo {
@@ -95,9 +74,14 @@
 
 /* Дискриптион */
 
-
+.description {
+  display: flex;
+  position: relative;
+}
 
 .two-columns {
+  display: flex;
+  position: relative;
   margin: 100px auto 0;
   justify-content: space-between;
   width: 80%;
@@ -131,7 +115,12 @@
 
 /* делаю первую таблицу Digits */
 
-
+.digits {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .section-title {
   width: 60%;
@@ -152,8 +141,12 @@
 }
 
 .table {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
   width: 1100px;
   margin-bottom: 100px;
+  justify-content: space-between;
 }
 
 .table__cell {
@@ -176,13 +169,15 @@
 /* Дошел до Фейнмана */
 
 .feynman {
+  display: flex;
+  position: relative;
+  flex-direction: column;
   height: 790px;
   background-image: url('../images/feynman.png');
   background-size: 867px 637px;
   background-repeat: no-repeat;
   background-position: 0 100%;
   align-items: center;
-
 }
 
 .feynman__title {
@@ -214,6 +209,10 @@
 
 /* Принципы обучения  kaufman */
 .kaufman {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
   overflow: hidden;
   background-color: #1f1f1f;
 }
@@ -249,6 +248,9 @@
 }
 
 .footer__columns {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
   padding-top: 60px;
   margin: 0 auto 40px;
   flex-basis: 711px;
@@ -257,6 +259,9 @@
 
 .footer__column_content_copyright {
   width: 50%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -273,13 +278,18 @@
   padding: 18px 0;
 }
 
-
-
 .footer__column-heading {
   color: #fff;
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 30px;
+}
+
+.footer__column-links {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .footer__column-link {
@@ -288,10 +298,6 @@
  font-size: 18px;
  line-height: 30px;
  align-items: center;
-}
-
-.footer__column-link:last-child {
-  margin-bottom: 16px;
 }
 
 .footer__column-social-icon {
