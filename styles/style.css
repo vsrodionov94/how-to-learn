@@ -6,9 +6,12 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: Arial, 'Helvetica Neue', sans-serif;
+  font-family: Arial, 'Helvetica Neue',   sans-serif;
 }
 
+ h1, h2, h3, p {
+  margin: 0;
+}
 /* Делаем хидер */
 
 .header {
@@ -52,6 +55,7 @@
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -157,7 +161,7 @@
 .table__heading {
   font-weight: bold;
   font-size: 24px;
-  list-style: 1.15em;
+  line-height: 1.15em;
 }
 
 .table__text {
@@ -177,6 +181,7 @@
   background-size: 867px 637px;
   background-repeat: no-repeat;
   background-position: 0 100%;
+  background-color: #f2f2f2;
   align-items: center;
 }
 
@@ -202,8 +207,7 @@
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
-}
-.feyman__link a {
+  color: #000;
   text-decoration: none;
 }
 
@@ -215,6 +219,7 @@
   justify-content: center;
   overflow: hidden;
   background-color: #1f1f1f;
+  padding-bottom: 90px;
 }
 
 .section-title_theme_dark{
@@ -228,13 +233,22 @@
 
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
   margin-right: 0;
   margin-top: 80px;
   z-index: 1;
 }
 
+.table__heading_theme_dark {
+  color: #fff;
+}
+
+.table__text_theme_dark {
+  color: #fff;
+}
 .kaufman__triangle{
+  width: 877px;
+  height: 877px;
+  background-image: url("../images/kaufman-triangle.svg");
   position: absolute;
   top: 0;
   right: -210px;
@@ -252,16 +266,18 @@
   position: relative;
   justify-content: space-between;
   padding-top: 60px;
-  margin: 0 auto 40px;
-  flex-basis: 711px;
+  margin: 0 auto;
   width: 90%;
 }
 
-.footer__column_content_copyright {
-  width: 50%;
+.footer__column {
   display: flex;
-  position: relative;
   flex-direction: column;
+  height: 250px;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
   justify-content: space-between;
 }
 
@@ -278,18 +294,23 @@
   padding: 18px 0;
 }
 
-.footer__column-heading {
+.footer__column_content_info {
   color: #fff;
-  margin-bottom: 20px;
   font-size: 18px;
   line-height: 30px;
 }
+.footer__column-heading {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
 
 .footer__column-links {
+  padding-left: 0;
   display: flex;
-  position: relative;
   flex-direction: column;
+  margin-top: 0;
   margin-bottom: 16px;
+  list-style-type: none;
 }
 
 .footer__column-link {
@@ -300,6 +321,11 @@
  align-items: center;
 }
 
+.footer__column_content_social {
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+}
 .footer__column-social-icon {
   height: 16px;
   width: 16px;
