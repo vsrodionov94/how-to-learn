@@ -173,6 +173,7 @@
 /* Дошел до Фейнмана */
 
 .feynman {
+  padding-top: 100px;
   display: flex;
   position: relative;
   flex-direction: column;
