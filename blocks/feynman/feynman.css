@@ -3,7 +3,7 @@
 @import url(./__link/feynman__link.css);
 
 .feynman {
-  padding-top: 100px;
+  padding-top: 80px;
   display: flex;
   position: relative;
   flex-direction: column;

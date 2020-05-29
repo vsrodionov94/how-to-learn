@@ -6,4 +6,9 @@
   font-size: 18px;
   line-height: 30px;
   align-items: center;
+  transition: opacity .5s;
+}
+
+.footer__column-link:hover {
+  opacity: .2;
 }

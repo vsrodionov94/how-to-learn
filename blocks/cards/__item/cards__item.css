@@ -1,0 +1,13 @@
+.cards__item {
+  width: 240px;
+  margin-right: 100px;
+  margin-bottom: 60px;
+}
+
+.cards__item:nth-child(3) {
+  margin-right: 0;
+}
+
+.cards__item:nth-child(4), .cards__item:nth-child(5) {
+  margin-bottom: 0;
+}
