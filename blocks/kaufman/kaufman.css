@@ -1,3 +1,4 @@
+@import url(./__triangle/kaufman__triangle.css);
 .kaufman {
   display: flex;
   position: relative;
@@ -8,4 +9,4 @@
   padding-bottom: 90px;
 }
 
-@import url(./__triangle/kaufman__triangle.css)
+
